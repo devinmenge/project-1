@@ -1,0 +1,35 @@
+.color-picker{
+    font-size:24px;
+}
+
+#colorPicker {
+ display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #8b0000;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #0092ba;
+}
+.time-slot {
+    width: 10%;
+}
+.activity {
+    width: 90%;
+}
