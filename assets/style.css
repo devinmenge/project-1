@@ -24,9 +24,7 @@ th {
     background-color: #8b0000;
     color: white;
 }
-tr:nth-child(even) {
-    background-color: #0092ba;
-}
+
 .time-slot {
     width: 10%;
 }
