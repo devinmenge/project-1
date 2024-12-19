@@ -8,12 +8,56 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: burlywood;
     padding: 20px;
 }
+
+.banner {
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin: 100px -200px;
+    width: 400px;
+    height: 60px;
+    border: 1px solid rgb(170, 17, 17);
+    font: normal 50px/60px 'Rye';
+    text-align: center;
+    color: rgb(85, 17, 17);
+    background: rgb(187, 34, 47);
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+                0 6px 10px rgba(0,0,0,.15);
+  }
+
+  .banner::before,
+  .banner::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    top: 24px;
+    display:block;
+    width: 40px;
+    height: 0px;
+    border: 30px solid rgb(187, 34, 34);
+    border-right: 20px solid rgb(153, 17, 17);
+    border-bottom-color: #b81e1e;
+    border-left-color: transparent;
+    transform: rotate(-10deg);
+  }
+
+  .banner::after {
+    left: auto;
+    right: -70px;
+    border-left: 20px solid rgb(153, 17, 17);
+    border-right: 30px solid transparent;
+    transform: rotate(10deg);
+  }
+  
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 200px;
 }
 th, td {
     border: 1px solid #ddd;
