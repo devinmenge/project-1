@@ -16,7 +16,7 @@ body {
     position: absolute;
     left: 50%;
     display: block;
-    margin: 100px -200px;
+    margin: 10px -200px;
     width: 400px;
     height: 60px;
     border: 1px solid rgb(170, 17, 17);
@@ -57,7 +57,10 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 200px;
+    background: white;
+    max-width: 1080px;
+min-width: 400px;
+margin: 130px auto;
 }
 th, td {
     border: 1px solid #ddd;
