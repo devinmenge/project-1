@@ -88,3 +88,38 @@ function getInputValue(button) {
   }
 }
 
+// Select elements
+const modalOverlay = document.getElementById('modalOverlay');
+const openModalBtn = document.querySelector('.open-modal-btn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const submitBtn = document.getElementById('submitBtn');
+const hearAboutUs = document.getElementById('hearAboutUs');
+
+// Open modal 
+openModalBtn.addEventListener('click', () => {
+    modalOverlay.style.display = 'flex';
+});
+
+// Close modal 
+closeModalBtn.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+});
+
+// Submit button 
+submitBtn.addEventListener('click', () => {
+    const selectedOption = hearAboutUs.value;
+    if (selectedOption) {
+        alert(`Thank you for your response: ${selectedOption}`);
+        modalOverlay.style.display = 'none';
+        hearAboutUs.value = ''; // Reset the dropdown
+    } else {
+        alert('Please select an option.');
+    }
+});
+
+// Close modal when clicking outside the modal
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.style.display = 'none';
+    }
+});
