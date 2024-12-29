@@ -85,6 +85,7 @@ th {
     text-align: center;
     padding: 20px;
     background-color: burlywood;
+    display: inline;
 }
 
 .open-modal-btn {
@@ -95,6 +96,7 @@ th {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
 }
 
 .open-modal-btn:hover {
