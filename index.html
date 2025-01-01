@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-
-    <title>TASKMASTER</title>
-    <!-- to do: make a css file -->
-    
+    <title>Taskmaster</title>
 </head>
 <body>
     <h1 class="banner">TASKMASTER</h1>
     <table>
-        <tr>
-            <th class="time-slot">Time</th>
-            <th class="activity">Activity</th>
-        </tr>
+        <thead>
+            <tr>
+                <th class="time-slot">
+                    Time
+                    <label>
+                        <input type="checkbox" id="timeFormatToggle"> 12 Hour
+                    </label>
+                </th>
+                <th class="activity">Activity</th>
+                <th class="options">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically generated -->
+        </tbody>
+    </table>
 
+    <!-- Trigger Button -->
+    <button id="openModalBtn" class="open-modal-btn">How did you hear about us?</button>
 
-        <script src="./assets/script.js"></script>
-
-
-
-<!--         <div class="footer">
-            <button class="open-modal-btn">How Did You Hear About Us?</button>
-        </div>
-    
-        <div class="modal-overlay" id="modalOverlay">
-            <div class="modal">
-                <h2>How Did You Hear About Us?</h2>
-                <select id="hearAboutUs">
+    <!-- Modal -->
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>How Did You Hear About Us?</h2>
+            <form id="feedbackForm">
+                <label for="source">Select an option:</label>
+                <select id="source" name="source" required>
                     <option value="">Select an option</option>
                     <option value="git hub">Git Hub</option>
                     <option value="social media">Social Media</option>
@@ -37,12 +43,39 @@
                     <option value="friend">Friend</option>
                     <option value="other">Other</option>
                 </select>
-                <div>
-                    <button class="close-modal-btn" id="closeModalBtn">Close</button>
-                    <button class="submit-btn" id="submitBtn">Submit</button>
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" id="cancelBtn" class="close-modal-btn">Cancel</button>
                 </div>
-            </div>
-        </div> -->
-        
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
