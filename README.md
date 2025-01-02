@@ -9,4 +9,10 @@ Taskmaster is a modern, web-based task management application designed to help u
 - Mark tasks with priority labels by changing the colors to focus on the most important items first.
 - Responsive Design: Optimized for desktop use, so you can manage tasks with ease and efficiency.
 
+## Deployed Link
+https://devinmenge.github.io/project-1/
+
+## Picture
+
+<img width="1438" alt="Screenshot 2025-01-02 at 11 38 21 AM" src="https://github.com/user-attachments/assets/431160fd-5b0c-4473-bd09-ae74a2ce96c8" />
 
